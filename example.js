@@ -1,19 +1,19 @@
 document.getElementById("logout").addEventListener("click", function () {
   asgar({
-    title: "Buna eminsen?",
-    message: "Cixmaq isteyirsen?",
-    details: "Bu hereketi geri qaytarmaq olmayacaq",
-    left: "Legv et",
-    right: "beli",
+    title: "Are you sure?",
+    message: "Want to log out?",
+    details: "You will not able to recover this action",
+    left: "Cancel",
+    right: "Yes,Iam sure",
   })
     .then(() => {
-      console.log("beliye kliklendi");
+      console.log("right button clicked");
     })
-    .catch((err) => {
-      console.log("legv et e kliklendi");
+    .catch(() => {
+      console.log("left button clicked");
     });
 });
 
-asgar({ title: "salam", right: "Ok", message: "necesen?" }).then(() => {
-  console.log("salam");
+asgar({ title: "Say hello to Asgar", right: "Hello" }).then(() => {
+  console.log("Aleyke salam");
 });
