@@ -1,4 +1,4 @@
-# AsgarAliyev (v1) for Meteor
+# AsgarAliyev (v1) for JS
 
 ---
 
