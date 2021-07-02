@@ -379,6 +379,7 @@ function convertToIcon(name) {
   else if (name === "info") return informationSvg;
   else if (name === "warning") return warningSvg;
   else if (name === "error") return errorSvg;
+  return informationSvg;
 }
 class Mini {
   body = document.getElementsByTagName("body")[0];
@@ -417,8 +418,18 @@ class Mini {
       self.clearAllClass();
     }, self.duration);
   }
+  correctType(type) {
+    if (
+      type === "success" ||
+      type === "warning" ||
+      type === "error" ||
+      type === "info"
+    )
+      return type;
+    return "info";
+  }
   constructor(message, type = "info", details = "", duration = 3000) {
-    console.log(duration);
+    type = this.correctType(type);
     this.duration = duration;
     this.changeAsgar();
     const icon = convertToIcon(type);
