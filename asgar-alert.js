@@ -5,6 +5,7 @@ function formatString(str, ...params) {
   }
   return str;
 }
+// simple comment
 const mainHtml = `<div id='asgar-alert' ></div>`;
 const mainStyle = `
 <style>
