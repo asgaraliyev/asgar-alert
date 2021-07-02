@@ -1,4 +1,4 @@
-# AsgarAliyev (v1) for JS
+# AsgarAlert (v1) for JS
 
 ---
 
@@ -40,7 +40,7 @@ asgar({
   });
 ```
 
-[View more examples](https://github.com/asgaraliyev/asgar-alert/blob/main/example.html)
+[View more examples](https://github.com/asgaraliyev/asgar-alert/blob/main/example.js)
 
 ## Browser compatibility
 
